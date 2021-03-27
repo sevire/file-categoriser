@@ -6,8 +6,8 @@ from watchdog.observers import Observer
 from src.event_handler import EventHandler
 
 if __name__ == '__main__':
-    watch_path = Path('/Volumes/USB-DRV-01M/iPhotoLibraries/extracted_folders')
-    destination_root = Path('/Volumes/USB-DRV-01M/iPhotoLibraries/extracted_images')
+    watch_path = Path('/Volumes/USB-DRV-01M/categorised_files_from_dell01/uncategorised')
+    destination_root = Path('/Volumes/USB-DRV-01M/categorised_files_from_dell01')
 
     event_handler = EventHandler(watch_path=watch_path, destination_root=destination_root)
 

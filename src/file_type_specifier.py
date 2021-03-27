@@ -16,13 +16,22 @@ file_categories = {
         '.txt',
         '.doc',
         '.docx',
-        '.odt ',
+        '.odt',
         '.pdf',
         '.rtf',
         '.tex',
         '.wks ',
         '.wps',
         '.wpd',
+        '.opml',
+        '.oo3',
+        '.outline',
+    },
+    'email': {
+        '.pst',
+        '.mbx',
+        '.dbx',
+        ''
     },
     'video': {
         '.3g2',
@@ -142,10 +151,14 @@ file_categories = {
         '.h',
     },
     'spreadsheets': {
+        '.numbers',
         '.ods',
         '.xlr',
         '.xls',
         '.xlsx',
+    },
+    'project': {
+        '.mpp',
     },
     'system': {
         '.bak',

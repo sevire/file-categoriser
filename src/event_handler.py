@@ -53,8 +53,13 @@ class EventHandler(FileSystemEventHandler):
         ignored_file_count = 0
         for child in self.watch_path.rglob('*'):
             suffix = child.suffix.lower()
+            if suffix == ".numbers":
+                pass
             # skips directories and non-specified extensions
             category = self.file_category_specifier.get_file_category(suffix)
+            if category is None:
+                pass
+                # category = 'uncategorised'
             if child.is_file() and category is not None:
                 destination_path = self.destination_root / category
                 destination_path = add_date_to_path(path=destination_path)
